@@ -1,7 +1,7 @@
 name: bugbounty-program-poller
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 15 min (GitHub may delay a few min under load)
+    - cron: "*/30 * * * *"   # every 30 min (GitHub may delay a few min under load)
   workflow_dispatch: {}       # lets you run it manually from the Actions tab
 permissions:
   contents: write             # to commit the updated state file back
@@ -15,9 +15,6 @@ jobs:
         with: { python-version: "3.12" }
       - name: poll + notify
         env:
-          YWH_TOKEN:        ${{ secrets.YWH_TOKEN }}
-          YWH_EMAIL:        ${{ secrets.YWH_EMAIL }}
-          YWH_PASSWORD:     ${{ secrets.YWH_PASSWORD }}
           DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
