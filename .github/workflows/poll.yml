@@ -15,6 +15,7 @@ jobs:
         with: { python-version: "3.12" }
       - name: poll + notify
         env:
+          YWH_TOKEN:        ${{ secrets.YWH_TOKEN }}
           YWH_EMAIL:        ${{ secrets.YWH_EMAIL }}
           YWH_PASSWORD:     ${{ secrets.YWH_PASSWORD }}
           DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
