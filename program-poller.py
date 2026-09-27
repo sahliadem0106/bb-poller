@@ -57,12 +57,18 @@ def ywh_login(email, pw):
 
 
 def ywh_programs():
-    email, pw = os.environ.get("YWH_EMAIL"), os.environ.get("YWH_PASSWORD")
-    if not (email and pw):
-        print("poller: YWH_EMAIL/YWH_PASSWORD unset — skipping YWH", file=sys.stderr); return []
-    token = ywh_login(email, pw)
-    if not token:
-        print("poller: YWH login failed after retries — skipping this cycle", file=sys.stderr); return []
+    # PREFERRED: a long-lived YWH Personal Access Token (YWH_TOKEN) — avoids the /login endpoint,
+    # which anti-automation 401s from CI IPs. Falls back to email/password login only if no token.
+    token = os.environ.get("YWH_TOKEN") or os.environ.get("YWH_PAT")
+    if token:
+        print("poller: using YWH_TOKEN (PAT) — skipping the /login call", file=sys.stderr)
+    else:
+        email, pw = os.environ.get("YWH_EMAIL"), os.environ.get("YWH_PASSWORD")
+        if not (email and pw):
+            print("poller: no YWH_TOKEN and no YWH_EMAIL/PASSWORD — skipping YWH", file=sys.stderr); return []
+        token = ywh_login(email, pw)
+        if not token:
+            print("poller: YWH login failed after retries — skipping this cycle", file=sys.stderr); return []
     auth = {"Authorization": f"Bearer {token}"}
     out, page = [], 1
     try:
