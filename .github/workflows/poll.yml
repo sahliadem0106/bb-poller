@@ -1,0 +1,30 @@
+name: bugbounty-program-poller
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min (GitHub may delay a few min under load)
+  workflow_dispatch: {}       # lets you run it manually from the Actions tab
+permissions:
+  contents: write             # to commit the updated state file back
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    concurrency: { group: poller, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: poll + notify
+        env:
+          YWH_EMAIL:        ${{ secrets.YWH_EMAIL }}
+          YWH_PASSWORD:     ${{ secrets.YWH_PASSWORD }}
+          DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python program-poller.py
+      - name: commit state
+        run: |
+          git config user.name  "poller-bot"
+          git config user.email "poller@local"
+          git add state/programs.json || true
+          git commit -m "state: program snapshot $(date -u +%FT%TZ)" || echo "no change"
+          git push || true
