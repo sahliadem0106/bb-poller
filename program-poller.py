@@ -16,7 +16,7 @@ Config via ENV (GitHub Actions secrets):
   STATE_FILE                         — default state/programs.json
 No YWH credentials are needed or used.
 """
-import json, os, sys, urllib.request
+import json, os, sys, time, urllib.request
 
 PROGRAMS_URL = "https://api.yeswehack.com/programs?page={page}"
 STATE_FILE = os.environ.get("STATE_FILE", "state/programs.json")
@@ -72,25 +72,53 @@ def save_state(state):
     json.dump(state, open(STATE_FILE, "w", encoding="utf-8"), indent=2)
 
 
+def _chunk(lines, limit):
+    """Group lines into messages each <= limit chars, splitting on line boundaries so no
+    change is ever dropped or cut in half (fixes the old truncate-to-one-message behaviour)."""
+    chunks, cur = [], ""
+    for ln in lines:
+        piece = (cur + "\n" + ln) if cur else ln
+        if len(piece) > limit:
+            if cur:
+                chunks.append(cur); cur = ln
+            else:  # a single line longer than the limit — hard-split it
+                while len(ln) > limit:
+                    chunks.append(ln[:limit]); ln = ln[limit:]
+                cur = ln
+        else:
+            cur = piece
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
 def notify(lines):
-    msg = "YesWeHack program changes:\n" + "\n".join(lines)
+    header = "YesWeHack program changes:"
     sent = False
     dw = os.environ.get("DISCORD_WEBHOOK")
     if dw:
         try:
-            _post(dw, {"content": msg[:1900]}); sent = True; print("notified Discord")
+            chunks = _chunk([header] + lines, 1900)
+            for ch in chunks:
+                _post(dw, {"content": ch, "flags": 4})  # flags 4 = SUPPRESS_EMBEDS: no link previews
+                time.sleep(0.6)                          # stay under Discord webhook rate limit
+            sent = True; print(f"notified Discord ({len(chunks)} msg)")
         except Exception as e:
             print(f"discord notify failed: {e}", file=sys.stderr)
     tt, tc = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if tt and tc:
         try:
-            _post(f"https://api.telegram.org/bot{tt}/sendMessage", {"chat_id": tc, "text": msg[:4000]})
+            for ch in _chunk([header] + lines, 3900):
+                _post(f"https://api.telegram.org/bot{tt}/sendMessage",
+                      {"chat_id": tc, "text": ch, "disable_web_page_preview": True})
+                time.sleep(0.4)
             sent = True; print("notified Telegram")
         except Exception as e:
             print(f"telegram notify failed: {e}", file=sys.stderr)
     if not sent:
         print("poller: NO notify channel configured (set DISCORD_WEBHOOK or TELEGRAM_TOKEN+CHAT_ID)", file=sys.stderr)
-        print(msg)
+        for ch in _chunk([header] + lines, 1900):
+            print(ch)
 
 
 def main():
