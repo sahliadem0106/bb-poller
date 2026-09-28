@@ -982,5 +982,9 @@
   "INTIGRITI:coveopublicbugbounty": {
     "updated": 1790392471,
     "title": "Coveo Public Bug Bounty"
+  },
+  "INTIGRITI:upcloud": {
+    "updated": 1789561898,
+    "title": "UpCloud Bug Bounty"
   }
 }
