@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
-"""program-poller.py — always-on watcher for NEW / UPDATED YesWeHack bug-bounty programs;
-pings Discord (and/or Telegram) whenever the public program directory changes. Rebuilt 2026-09-27.
+"""program-poller.py — always-on watcher for NEW / UPDATED bug-bounty programs on
+YesWeHack AND Intigriti, pinging Discord/Telegram on any change. Rebuilt 2026-09-28.
 
-Auth-free by design: it reads the PUBLIC endpoint https://api.yeswehack.com/programs, which returns
-every public program (slug, title, last_update_at, bounty range) with NO login. That sidesteps the
-earlier failure entirely — YWH's /login endpoint 401s GitHub's CI IPs, but the public listing does
-not, so this runs reliably from any host.
+Both sources are PUBLIC, auth-free endpoints, so this runs reliably from anywhere
+(GitHub Actions included) — no login, no token, no 401:
+  YWH       GET https://api.yeswehack.com/programs?page=N
+  Intigriti GET https://app.intigriti.com/api/core/public/programs
 
-State: a small JSON file (state/programs.json) mapping "<slug>" -> {updated, title}. On GitHub
-Actions the workflow commits the updated state back after each run so the next run can diff.
+State: state/programs.json mapping "PLATFORM:key" -> {updated, title}. On GitHub Actions
+the workflow commits the updated state back after each run so the next run can diff.
 
 Config via ENV (GitHub Actions secrets):
-  DISCORD_WEBHOOK                    — if set, notify via Discord webhook (just the URL)
-  TELEGRAM_TOKEN, TELEGRAM_CHAT_ID   — if set, notify via Telegram bot instead/also
-  STATE_FILE                         — default state/programs.json
-No YWH credentials are needed or used.
+  DISCORD_WEBHOOK · TELEGRAM_TOKEN + TELEGRAM_CHAT_ID · STATE_FILE (default state/programs.json)
+Resilience: a source that fails this cycle is skipped WITHOUT wiping its state, so it never
+re-fires a false burst when it recovers.
 """
 import json, os, sys, time, urllib.request
 
-PROGRAMS_URL = "https://api.yeswehack.com/programs?page={page}"
+YWH_URL = "https://api.yeswehack.com/programs?page={page}"
+INTG_URL = "https://app.intigriti.com/api/core/public/programs"
 STATE_FILE = os.environ.get("STATE_FILE", "state/programs.json")
-UA = "Mozilla/5.0 (X11; Linux x86_64) program-poller/2.0"
+UA = "Mozilla/5.0 (X11; Linux x86_64) program-poller/3.0"
 
 
 def _get(url):
@@ -30,34 +30,52 @@ def _get(url):
 
 
 def _post(url, payload):
-    body = json.dumps(payload).encode()
-    req = urllib.request.Request(url, data=body, method="POST",
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), method="POST",
                                  headers={"User-Agent": UA, "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
 
 
 def ywh_programs():
-    """Fetch every public YWH program from the auth-free directory (paginated)."""
     out, page = [], 1
     try:
         while True:
-            d = _get(PROGRAMS_URL.format(page=page))
+            d = _get(YWH_URL.format(page=page))
             out += d.get("items", [])
             if page >= d.get("pagination", {}).get("nb_pages", 1):
                 break
             page += 1
     except Exception as e:
-        print(f"poller: YWH fetch failed ({e}) — skipping this cycle", file=sys.stderr)
+        print(f"poller: YWH fetch failed ({e}) — skipping YWH this cycle", file=sys.stderr)
         return []
-    progs = []
+    res = []
     for p in out:
         lo, hi = p.get("bounty_reward_min"), p.get("bounty_reward_max")
         bounty = f"${lo}-${hi}" if (lo or hi) else ("VDP" if p.get("vdp") else "")
-        progs.append({"slug": p.get("slug"), "title": p.get("title"),
-                      "updated": p.get("last_update_at"), "bounty": bounty,
-                      "url": f"https://yeswehack.com/programs/{p.get('slug')}"})
-    return progs
+        res.append({"platform": "YWH", "key": p.get("slug"), "title": p.get("title"),
+                    "updated": p.get("last_update_at"), "bounty": bounty,
+                    "url": f"https://yeswehack.com/programs/{p.get('slug')}"})
+    return res
+
+
+def intigriti_programs():
+    try:
+        items = _get(INTG_URL)
+    except Exception as e:
+        print(f"poller: Intigriti fetch failed ({e}) — skipping Intigriti this cycle", file=sys.stderr)
+        return []
+    if not isinstance(items, list):
+        items = items.get("records") or items.get("items") or []
+    res = []
+    for p in items:
+        mn, mx = (p.get("minBounty") or {}), (p.get("maxBounty") or {})
+        lo, hi, cur = mn.get("value"), mx.get("value"), (mx.get("currency") or mn.get("currency") or "")
+        bounty = f"{int(lo)}-{int(hi)} {cur}".strip() if (lo or hi) else ""
+        ch, h = p.get("companyHandle"), p.get("handle")
+        res.append({"platform": "INTIGRITI", "key": h, "title": p.get("name"),
+                    "updated": p.get("lastUpdatedAt"), "bounty": bounty,
+                    "url": f"https://app.intigriti.com/programs/{ch}/{h}/detail"})
+    return res
 
 
 def load_state():
@@ -73,15 +91,13 @@ def save_state(state):
 
 
 def _chunk(lines, limit):
-    """Group lines into messages each <= limit chars, splitting on line boundaries so no
-    change is ever dropped or cut in half (fixes the old truncate-to-one-message behaviour)."""
     chunks, cur = [], ""
     for ln in lines:
         piece = (cur + "\n" + ln) if cur else ln
         if len(piece) > limit:
             if cur:
                 chunks.append(cur); cur = ln
-            else:  # a single line longer than the limit — hard-split it
+            else:
                 while len(ln) > limit:
                     chunks.append(ln[:limit]); ln = ln[limit:]
                 cur = ln
@@ -93,15 +109,14 @@ def _chunk(lines, limit):
 
 
 def notify(lines):
-    header = "YesWeHack program changes:"
+    header = "Bug-bounty program changes (YWH + Intigriti):"
     sent = False
     dw = os.environ.get("DISCORD_WEBHOOK")
     if dw:
         try:
             chunks = _chunk([header] + lines, 1900)
             for ch in chunks:
-                _post(dw, {"content": ch, "flags": 4})  # flags 4 = SUPPRESS_EMBEDS: no link previews
-                time.sleep(0.6)                          # stay under Discord webhook rate limit
+                _post(dw, {"content": ch, "flags": 4}); time.sleep(0.6)  # flags 4 = no link previews
             sent = True; print(f"notified Discord ({len(chunks)} msg)")
         except Exception as e:
             print(f"discord notify failed: {e}", file=sys.stderr)
@@ -110,41 +125,43 @@ def notify(lines):
         try:
             for ch in _chunk([header] + lines, 3900):
                 _post(f"https://api.telegram.org/bot{tt}/sendMessage",
-                      {"chat_id": tc, "text": ch, "disable_web_page_preview": True})
-                time.sleep(0.4)
+                      {"chat_id": tc, "text": ch, "disable_web_page_preview": True}); time.sleep(0.4)
             sent = True; print("notified Telegram")
         except Exception as e:
             print(f"telegram notify failed: {e}", file=sys.stderr)
     if not sent:
-        print("poller: NO notify channel configured (set DISCORD_WEBHOOK or TELEGRAM_TOKEN+CHAT_ID)", file=sys.stderr)
+        print("poller: NO notify channel configured", file=sys.stderr)
         for ch in _chunk([header] + lines, 1900):
             print(ch)
 
 
 def main():
-    progs = ywh_programs()
+    ywh = ywh_programs()
+    intg = intigriti_programs()
+    progs = ywh + intg
+    present = set(p["platform"] for p in progs)
     if not progs:
-        print("poller: nothing fetched this cycle; state untouched, will retry next tick")
-        return 0
+        print("poller: nothing fetched this cycle; state untouched"); return 0
     state = load_state()
+    new_state = dict(state)  # keep entries for any source that failed this cycle
     changes = []
     for p in progs:
-        key = p["slug"]
-        if not key:
+        if not p.get("key"):
             continue
+        key = f"{p['platform']}:{p['key']}"
         prev = state.get(key)
         tag = f" [{p['bounty']}]" if p.get("bounty") else ""
         if prev is None:
-            changes.append(f"[NEW] {p['title']}{tag} — {p['url']}")
+            changes.append(f"[NEW] {p['platform']} · {p['title']}{tag} — {p['url']}")
         elif prev.get("updated") != p.get("updated"):
-            changes.append(f"[UPDATED] {p['title']}{tag} — {p['url']}")
-        state[key] = {"updated": p.get("updated"), "title": p.get("title")}
-    save_state(state)
+            changes.append(f"[UPDATED] {p['platform']} · {p['title']}{tag} — {p['url']}")
+        new_state[key] = {"updated": p.get("updated"), "title": p.get("title")}
+    save_state(new_state)
     if changes:
-        print(f"{len(changes)} change(s)")
+        print(f"{len(changes)} change(s) across {', '.join(sorted(present))}")
         notify(changes)
     else:
-        print(f"no changes ({len(progs)} programs tracked)")
+        print(f"no changes ({len(progs)} programs tracked: {', '.join(sorted(present))})")
     return 0
 
 
