@@ -24,7 +24,7 @@
     "title": "Swiss Post - E-Voting"
   },
   "YWH:dana-bug-bounty-program": {
-    "updated": "2026-09-22T07:27:10+02:00",
+    "updated": "2026-09-29T08:16:56+02:00",
     "title": "DANA Bug Bounty Program"
   },
   "YWH:cryptobox-bug-bounty": {
@@ -600,7 +600,7 @@
     "title": "Delen Private Bank"
   },
   "INTIGRITI:randstad": {
-    "updated": 1790258023,
+    "updated": 1790655129,
     "title": "Randstad"
   },
   "INTIGRITI:intelvulnerabilitydisclosureprogram": {
@@ -986,5 +986,9 @@
   "INTIGRITI:upcloud": {
     "updated": 1789561898,
     "title": "UpCloud Bug Bounty"
+  },
+  "INTIGRITI:autolivvdp": {
+    "updated": 1790672234,
+    "title": "Autoliv VDP"
   }
 }
