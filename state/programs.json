@@ -684,7 +684,7 @@
     "title": "HRS Group VDP"
   },
   "INTIGRITI:wpenginebugbounty": {
-    "updated": 1790797679,
+    "updated": 1790863375,
     "title": "WP Engine Bug Bounty"
   },
   "INTIGRITI:simscale": {
@@ -952,7 +952,7 @@
     "title": "Grafana Labs"
   },
   "INTIGRITI:liferaydxp": {
-    "updated": 1789663234,
+    "updated": 1790853730,
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
@@ -972,7 +972,7 @@
     "title": "Yahoo Bug Bounty"
   },
   "INTIGRITI:sqillscorporatewebsite": {
-    "updated": 1790749818,
+    "updated": 1790863241,
     "title": "Sqills"
   },
   "INTIGRITI:amd": {
@@ -994,5 +994,9 @@
   "INTIGRITI:nxtportvdp": {
     "updated": 1790837702,
     "title": "NxtPort VDP"
+  },
+  "INTIGRITI:matecovdp": {
+    "updated": 1790859502,
+    "title": "Mateco VDP"
   }
 }
