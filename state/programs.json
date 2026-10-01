@@ -332,7 +332,7 @@
     "title": "Exact Vulnerability Disclosure Program"
   },
   "INTIGRITI:dstnybugbounty": {
-    "updated": 1784187456,
+    "updated": 1790845449,
     "title": "Dstny"
   },
   "INTIGRITI:intigriti": {
@@ -436,7 +436,7 @@
     "title": "Dutch Lottery VDP"
   },
   "INTIGRITI:adobepublic": {
-    "updated": 1790591190,
+    "updated": 1790843566,
     "title": "Adobe Public"
   },
   "INTIGRITI:speakapresponsibledisclosure": {
@@ -940,7 +940,7 @@
     "title": "Webnode"
   },
   "INTIGRITI:daytonabugbounty": {
-    "updated": 1790782829,
+    "updated": 1790838089,
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1790770758,
+    "updated": 1790834544,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -990,5 +990,9 @@
   "INTIGRITI:autolivvdp": {
     "updated": 1790672234,
     "title": "Autoliv VDP"
+  },
+  "INTIGRITI:nxtportvdp": {
+    "updated": 1790837702,
+    "title": "NxtPort VDP"
   }
 }
