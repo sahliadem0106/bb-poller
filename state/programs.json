@@ -32,7 +32,7 @@
     "title": "Cryptobox"
   },
   "YWH:infomaniak-bug-bounty-program": {
-    "updated": "2026-09-28T18:14:07+02:00",
+    "updated": "2026-10-02T16:14:04+02:00",
     "title": "Infomaniak Bug Bounty program"
   },
   "YWH:contentsquare-bug-bounty-program": {
@@ -88,7 +88,7 @@
     "title": "CyberGhost - Bug Bounty Program"
   },
   "YWH:dojo": {
-    "updated": "2026-08-28T10:49:00+02:00",
+    "updated": "2026-10-02T15:51:51+02:00",
     "title": "YesWeHack Dojo"
   },
   "YWH:bug-bounty-program-blablacar": {
@@ -720,7 +720,7 @@
     "title": "Canada Post - Responsible Disclosure Program"
   },
   "INTIGRITI:arkanenetwork": {
-    "updated": 1790783586,
+    "updated": 1790951347,
     "title": "Venly"
   },
   "INTIGRITI:innogames": {
@@ -864,7 +864,7 @@
     "title": "Aikido Security: Bug Bounty Program"
   },
   "INTIGRITI:postibugbounty": {
-    "updated": 1789025525,
+    "updated": 1790945374,
     "title": "Posti Bug Bounty "
   },
   "INTIGRITI:zabkagroup-vdp": {
@@ -944,7 +944,7 @@
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
-    "updated": 1788786931,
+    "updated": 1790947482,
     "title": "Visma"
   },
   "INTIGRITI:grafanaossbbp": {
@@ -956,11 +956,11 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1790883292,
+    "updated": 1790946317,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
-    "updated": 1790351952,
+    "updated": 1790960403,
     "title": "DataCamp"
   },
   "INTIGRITI:VDP": {
@@ -968,7 +968,7 @@
     "title": "9altitudes - Vulnerability Disclosure Program"
   },
   "INTIGRITI:yahoobugbounty": {
-    "updated": 1790602607,
+    "updated": 1790957296,
     "title": "Yahoo Bug Bounty"
   },
   "INTIGRITI:sqillscorporatewebsite": {
