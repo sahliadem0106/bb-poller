@@ -32,7 +32,7 @@
     "title": "Cryptobox"
   },
   "YWH:infomaniak-bug-bounty-program": {
-    "updated": "2026-10-02T16:14:04+02:00",
+    "updated": "2026-10-12T12:53:12+02:00",
     "title": "Infomaniak Bug Bounty program"
   },
   "YWH:contentsquare-bug-bounty-program": {
@@ -148,7 +148,7 @@
     "title": "KOMOJU - Public Bug Bounty Program"
   },
   "YWH:pine-labs-bug-bounty-program": {
-    "updated": "2026-06-08T07:53:43+02:00",
+    "updated": "2026-10-12T09:39:21+02:00",
     "title": "Pine Labs Bug Bounty Program"
   },
   "YWH:otto-de-bug-bounty": {
@@ -196,7 +196,7 @@
     "title": "Harman International Lifestyle Products & Services"
   },
   "YWH:xelians-blackbox-program": {
-    "updated": "2026-02-02T09:58:15+01:00",
+    "updated": "2026-10-12T10:04:21+02:00",
     "title": "Xelians - Blackbox program"
   },
   "YWH:grw-trading-fze-bug-bounty-program": {
@@ -520,7 +520,7 @@
     "title": "Torfs"
   },
   "INTIGRITI:nvidiapublicbugbounty": {
-    "updated": 1791713915,
+    "updated": 1791808243,
     "title": "NVIDIA Public Bug Bounty"
   },
   "INTIGRITI:humo": {
@@ -660,7 +660,7 @@
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
-    "updated": 1791717366,
+    "updated": 1791812178,
     "title": "Here Technologies"
   },
   "INTIGRITI:qcvdp": {
@@ -728,7 +728,7 @@
     "title": "InnoGames"
   },
   "INTIGRITI:soundtrackyourbrand": {
-    "updated": 1790594151,
+    "updated": 1791802497,
     "title": "Soundtrack Technologies"
   },
   "INTIGRITI:donorboxvdp": {
@@ -796,7 +796,7 @@
     "title": "Cloudways by DigitalOcean"
   },
   "INTIGRITI:ripencc": {
-    "updated": 1791209122,
+    "updated": 1791818572,
     "title": "RIPE NCC"
   },
   "INTIGRITI:skodaautoprivatebugbountyprogram": {
@@ -904,7 +904,7 @@
     "title": "MyDirtyHobby Bug Bounty Program"
   },
   "INTIGRITI:telenetgroup": {
-    "updated": 1791715079,
+    "updated": 1791803674,
     "title": "Telenet - Base - Wyre - Tadaam"
   },
   "INTIGRITI:probiller-bbp": {
@@ -940,7 +940,7 @@
     "title": "Webnode"
   },
   "INTIGRITI:daytonabugbounty": {
-    "updated": 1791706544,
+    "updated": 1791820097,
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1791649848,
+    "updated": 1791818031,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -980,7 +980,7 @@
     "title": "AMD Product Security Bug Bounty Program"
   },
   "INTIGRITI:coveopublicbugbounty": {
-    "updated": 1791634018,
+    "updated": 1791812436,
     "title": "Coveo Public Bug Bounty"
   },
   "INTIGRITI:upcloud": {
