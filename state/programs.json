@@ -540,7 +540,7 @@
     "title": "W\u00e4rtsil\u00e4 Vulnerability Disclosure Program"
   },
   "INTIGRITI:uzleuven": {
-    "updated": 1791900717,
+    "updated": 1791989563,
     "title": "UZ Leuven"
   },
   "INTIGRITI:hetparool": {
@@ -904,7 +904,7 @@
     "title": "MyDirtyHobby Bug Bounty Program"
   },
   "INTIGRITI:telenetgroup": {
-    "updated": 1791894384,
+    "updated": 1791981486,
     "title": "Telenet - Base - Wyre - Tadaam"
   },
   "INTIGRITI:probiller-bbp": {
@@ -960,7 +960,7 @@
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
-    "updated": 1791970710,
+    "updated": 1791974916,
     "title": "DataCamp"
   },
   "INTIGRITI:VDP": {
@@ -980,7 +980,7 @@
     "title": "AMD Product Security Bug Bounty Program"
   },
   "INTIGRITI:coveopublicbugbounty": {
-    "updated": 1791921108,
+    "updated": 1791974623,
     "title": "Coveo Public Bug Bounty"
   },
   "INTIGRITI:upcloud": {
@@ -998,5 +998,9 @@
   "INTIGRITI:matecovdp": {
     "updated": 1790859502,
     "title": "Mateco VDP"
+  },
+  "YWH:onedoc-sa-bug-bounty-program": {
+    "updated": "2026-10-14T13:46:38+02:00",
+    "title": "OneDoc"
   }
 }
