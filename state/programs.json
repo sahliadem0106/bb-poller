@@ -100,7 +100,7 @@
     "title": "VINCI SA - Public program"
   },
   "YWH:vfs-global-bug-bounty-program": {
-    "updated": "2026-08-17T04:42:51+02:00",
+    "updated": "2026-10-15T07:12:06+02:00",
     "title": "VFS Global Bug Bounty Program"
   },
   "YWH:goto-financial-public-bounty-program": {
@@ -332,7 +332,7 @@
     "title": "Exact Vulnerability Disclosure Program"
   },
   "INTIGRITI:dstnybugbounty": {
-    "updated": 1792013612,
+    "updated": 1792047166,
     "title": "Dstny"
   },
   "INTIGRITI:intigriti": {
@@ -684,7 +684,7 @@
     "title": "HRS Group VDP"
   },
   "INTIGRITI:wpenginebugbounty": {
-    "updated": 1790863375,
+    "updated": 1792055752,
     "title": "WP Engine Bug Bounty"
   },
   "INTIGRITI:simscale": {
