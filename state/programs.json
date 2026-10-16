@@ -332,7 +332,7 @@
     "title": "Exact Vulnerability Disclosure Program"
   },
   "INTIGRITI:dstnybugbounty": {
-    "updated": 1792047166,
+    "updated": 1792134383,
     "title": "Dstny"
   },
   "INTIGRITI:intigriti": {
@@ -348,7 +348,7 @@
     "title": "Water-Link"
   },
   "INTIGRITI:altera": {
-    "updated": 1792099474,
+    "updated": 1792145061,
     "title": "Altera"
   },
   "INTIGRITI:kruidvat": {
@@ -684,7 +684,7 @@
     "title": "HRS Group VDP"
   },
   "INTIGRITI:wpenginebugbounty": {
-    "updated": 1792089881,
+    "updated": 1792145860,
     "title": "WP Engine Bug Bounty"
   },
   "INTIGRITI:simscale": {
@@ -800,7 +800,7 @@
     "title": "RIPE NCC"
   },
   "INTIGRITI:skodaautoprivatebugbountyprogram": {
-    "updated": 1791224957,
+    "updated": 1792144688,
     "title": "Skoda Auto Bug Bounty Program"
   },
   "INTIGRITI:orbiavdp": {
@@ -940,7 +940,7 @@
     "title": "Webnode"
   },
   "INTIGRITI:daytonabugbounty": {
-    "updated": 1791820097,
+    "updated": 1792143842,
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
