@@ -204,7 +204,7 @@
     "title": "GRW Trading FZE - Open Bug Bounty Program"
   },
   "YWH:ezviz-bug-bounty-program": {
-    "updated": "2025-12-05T06:05:38+01:00",
+    "updated": "2026-10-19T04:56:04+02:00",
     "title": "Ezviz - Bug Bounty Program"
   },
   "YWH:swapcard": {
@@ -1002,5 +1002,9 @@
   "YWH:onedoc-sa-bug-bounty-program": {
     "updated": "2026-10-14T13:46:38+02:00",
     "title": "OneDoc"
+  },
+  "YWH:govtech-vulnerability-disclosure-programme-policy": {
+    "updated": "2026-10-19T05:20:12+02:00",
+    "title": "GovTech - Vulnerability Disclosure Programme"
   }
 }
