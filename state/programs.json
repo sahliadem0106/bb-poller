@@ -164,7 +164,7 @@
     "title": "Moneybox Bug Bounty"
   },
   "YWH:harman-international-web-applications": {
-    "updated": "2026-10-12T19:43:28+02:00",
+    "updated": "2026-10-19T15:01:02+02:00",
     "title": "HARMAN International - Web Applications"
   },
   "YWH:mon-espace-sante-mes": {
@@ -264,7 +264,7 @@
     "title": "Leapsome"
   },
   "INTIGRITI:uitgeverijdeviant": {
-    "updated": 1792193697,
+    "updated": 1792397212,
     "title": "Uitgeverij Deviant Bug Bounty"
   },
   "INTIGRITI:intertoys": {
@@ -372,7 +372,7 @@
     "title": "ICI PARIS XL"
   },
   "INTIGRITI:upholdcom": {
-    "updated": 1792318581,
+    "updated": 1792398177,
     "title": "Uphold"
   },
   "INTIGRITI:intergamma": {
@@ -656,7 +656,7 @@
     "title": "Qualified Responsible Disclosure Program"
   },
   "INTIGRITI:pdqcomprivate": {
-    "updated": 1792327830,
+    "updated": 1792405273,
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
@@ -692,7 +692,7 @@
     "title": "SimScale"
   },
   "INTIGRITI:socialdeal": {
-    "updated": 1787218107,
+    "updated": 1792403829,
     "title": "Social Deal"
   },
   "INTIGRITI:bmc": {
@@ -744,7 +744,7 @@
     "title": "Axel Springer National Media & Tech"
   },
   "INTIGRITI:veriffbugbounty": {
-    "updated": 1792073990,
+    "updated": 1792403314,
     "title": "Veriff Bug Bounty"
   },
   "INTIGRITI:rgfbe-vdp": {
@@ -956,11 +956,11 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1792177294,
+    "updated": 1792401587,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
-    "updated": 1792338816,
+    "updated": 1792400668,
     "title": "DataCamp"
   },
   "INTIGRITI:VDP": {
@@ -1006,5 +1006,13 @@
   "YWH:govtech-vulnerability-disclosure-programme-policy": {
     "updated": "2026-10-19T05:20:12+02:00",
     "title": "GovTech - Vulnerability Disclosure Programme"
+  },
+  "INTIGRITI:challenge1026": {
+    "updated": 1792403040,
+    "title": "Challenge 1026"
+  },
+  "INTIGRITI:fluvius": {
+    "updated": 1792398845,
+    "title": "Fluvius"
   }
 }
