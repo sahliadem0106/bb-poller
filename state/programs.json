@@ -1014,5 +1014,9 @@
   "INTIGRITI:fluvius": {
     "updated": 1792398845,
     "title": "Fluvius"
+  },
+  "INTIGRITI:lightsparkpublicbugbounty": {
+    "updated": 1792452055,
+    "title": "Lightspark Public Bug Bounty"
   }
 }
