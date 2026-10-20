@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1792401587,
+    "updated": 1792496375,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -972,7 +972,7 @@
     "title": "Yahoo Bug Bounty"
   },
   "INTIGRITI:sqillscorporatewebsite": {
-    "updated": 1792081032,
+    "updated": 1792486913,
     "title": "Sqills"
   },
   "INTIGRITI:amd": {
@@ -980,7 +980,7 @@
     "title": "AMD Product Security Bug Bounty Program"
   },
   "INTIGRITI:coveopublicbugbounty": {
-    "updated": 1791974623,
+    "updated": 1792485400,
     "title": "Coveo Public Bug Bounty"
   },
   "INTIGRITI:upcloud": {
@@ -1016,7 +1016,7 @@
     "title": "Fluvius"
   },
   "INTIGRITI:lightsparkpublicbugbounty": {
-    "updated": 1792452055,
+    "updated": 1792487482,
     "title": "Lightspark Public Bug Bounty"
   }
 }
