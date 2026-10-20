@@ -96,7 +96,7 @@
     "title": "Bug Bounty Program - BlaBlaCar"
   },
   "YWH:vincisa-public-program": {
-    "updated": "2026-08-18T14:22:17+02:00",
+    "updated": "2026-10-20T16:07:33+02:00",
     "title": "VINCI SA - Public program"
   },
   "YWH:vfs-global-bug-bounty-program": {
@@ -800,7 +800,7 @@
     "title": "RIPE NCC"
   },
   "INTIGRITI:skodaautoprivatebugbountyprogram": {
-    "updated": 1792227406,
+    "updated": 1792500867,
     "title": "Skoda Auto Bug Bounty Program"
   },
   "INTIGRITI:orbiavdp": {
@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1792496375,
+    "updated": 1792503254,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -1016,7 +1016,7 @@
     "title": "Fluvius"
   },
   "INTIGRITI:lightsparkpublicbugbounty": {
-    "updated": 1792487482,
+    "updated": 1792506389,
     "title": "Lightspark Public Bug Bounty"
   }
 }
