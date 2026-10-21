@@ -656,7 +656,7 @@
     "title": "Qualified Responsible Disclosure Program"
   },
   "INTIGRITI:pdqcomprivate": {
-    "updated": 1792405273,
+    "updated": 1792587676,
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
@@ -944,7 +944,7 @@
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
-    "updated": 1792422036,
+    "updated": 1792591963,
     "title": "Visma"
   },
   "INTIGRITI:grafanaossbbp": {
@@ -956,11 +956,11 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1792571020,
+    "updated": 1792587065,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
-    "updated": 1792574829,
+    "updated": 1792590923,
     "title": "DataCamp"
   },
   "INTIGRITI:VDP": {
@@ -968,7 +968,7 @@
     "title": "9altitudes - Vulnerability Disclosure Program"
   },
   "INTIGRITI:yahoobugbounty": {
-    "updated": 1790957296,
+    "updated": 1792595277,
     "title": "Yahoo Bug Bounty"
   },
   "INTIGRITI:sqillscorporatewebsite": {
