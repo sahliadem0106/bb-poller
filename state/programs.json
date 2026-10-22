@@ -32,7 +32,7 @@
     "title": "Cryptobox"
   },
   "YWH:infomaniak-bug-bounty-program": {
-    "updated": "2026-10-13T13:58:53+02:00",
+    "updated": "2026-10-22T13:27:09+02:00",
     "title": "Infomaniak Bug Bounty program"
   },
   "YWH:contentsquare-bug-bounty-program": {
@@ -248,7 +248,7 @@
     "title": "Ubisoft Game Security BBP"
   },
   "INTIGRITI:rampfbugbounty": {
-    "updated": 1765795538,
+    "updated": 1792668396,
     "title": "RAMPF Bug Bounty"
   },
   "INTIGRITI:fortnox": {
@@ -980,7 +980,7 @@
     "title": "AMD Product Security Bug Bounty Program"
   },
   "INTIGRITI:coveopublicbugbounty": {
-    "updated": 1792647409,
+    "updated": 1792671767,
     "title": "Coveo Public Bug Bounty"
   },
   "INTIGRITI:upcloud": {
