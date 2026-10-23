@@ -32,7 +32,7 @@
     "title": "Cryptobox"
   },
   "YWH:infomaniak-bug-bounty-program": {
-    "updated": "2026-10-22T13:27:09+02:00",
+    "updated": "2026-10-23T13:00:13+02:00",
     "title": "Infomaniak Bug Bounty program"
   },
   "YWH:contentsquare-bug-bounty-program": {
@@ -176,7 +176,7 @@
     "title": "Dossier Medical Partag\u00e9 Bug Bounty Program"
   },
   "YWH:thuringer-aufbaubank-bug-bounty-program": {
-    "updated": "2026-03-31T10:31:34+02:00",
+    "updated": "2026-10-23T14:12:18+02:00",
     "title": "Th\u00fcringer Aufbaubank Bug Bounty Program"
   },
   "YWH:datadome-bug-bounty": {
@@ -240,7 +240,7 @@
     "title": "Sogexia"
   },
   "INTIGRITI:12build": {
-    "updated": 1787513443,
+    "updated": 1792767246,
     "title": "12Build Bug Bounty Program"
   },
   "INTIGRITI:ubisoftgamesecbbp": {
@@ -248,7 +248,7 @@
     "title": "Ubisoft Game Security BBP"
   },
   "INTIGRITI:rampfbugbounty": {
-    "updated": 1792739106,
+    "updated": 1792761134,
     "title": "RAMPF Bug Bounty"
   },
   "INTIGRITI:fortnox": {
@@ -256,7 +256,7 @@
     "title": "Fortnox Bug Bounty Program"
   },
   "INTIGRITI:allekabels": {
-    "updated": 1792737728,
+    "updated": 1792762674,
     "title": "Allekabels"
   },
   "INTIGRITI:leapsome": {
@@ -272,7 +272,7 @@
     "title": "Intertoys"
   },
   "INTIGRITI:doccle": {
-    "updated": 1788506123,
+    "updated": 1792754831,
     "title": "Doccle Bug Bounty program"
   },
   "INTIGRITI:farfetchbugbounty": {
@@ -372,7 +372,7 @@
     "title": "ICI PARIS XL"
   },
   "INTIGRITI:upholdcom": {
-    "updated": 1792664014,
+    "updated": 1792761223,
     "title": "Uphold"
   },
   "INTIGRITI:intergamma": {
@@ -620,7 +620,7 @@
     "title": "Water-Link VDP"
   },
   "INTIGRITI:nexuzhealthwebpacs": {
-    "updated": 1790365298,
+    "updated": 1792751989,
     "title": "Nexuzhealth Web PACS"
   },
   "INTIGRITI:bitvavovdp": {
@@ -644,7 +644,7 @@
     "title": "Dropbox Vulnerability Disclosure Program "
   },
   "INTIGRITI:arm": {
-    "updated": 1785399105,
+    "updated": 1792754875,
     "title": "Arm"
   },
   "INTIGRITI:fing": {
@@ -1018,5 +1018,9 @@
   "INTIGRITI:lightsparkpublicbugbounty": {
     "updated": 1792506389,
     "title": "Lightspark Public Bug Bounty"
+  },
+  "INTIGRITI:cokeonenorthamerica": {
+    "updated": 1792761110,
+    "title": "Coke One North America"
   }
 }
