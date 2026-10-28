@@ -344,7 +344,7 @@
     "title": "Grafana Labs - Vulnerability Disclosure Program (VDP)"
   },
   "INTIGRITI:water-link": {
-    "updated": 1786433203,
+    "updated": 1793193775,
     "title": "Water-Link"
   },
   "INTIGRITI:altera": {
@@ -616,7 +616,7 @@
     "title": "Yacht"
   },
   "INTIGRITI:water-linkvdp": {
-    "updated": 1774522302,
+    "updated": 1793193509,
     "title": "Water-Link VDP"
   },
   "INTIGRITI:nexuzhealthwebpacs": {
@@ -660,7 +660,7 @@
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
-    "updated": 1793063710,
+    "updated": 1793205084,
     "title": "Here Technologies"
   },
   "INTIGRITI:qcvdp": {
@@ -856,7 +856,7 @@
     "title": "Voi Vulnerability Disclosure Program"
   },
   "INTIGRITI:voiscooters": {
-    "updated": 1792999336,
+    "updated": 1793188289,
     "title": "Voi Scooters"
   },
   "INTIGRITI:aikido": {
@@ -944,7 +944,7 @@
     "title": "Daytona Bug Bounty"
   },
   "INTIGRITI:visma": {
-    "updated": 1793037753,
+    "updated": 1793189066,
     "title": "Visma"
   },
   "INTIGRITI:grafanaossbbp": {
@@ -1022,5 +1022,9 @@
   "INTIGRITI:cokeonenorthamerica": {
     "updated": 1792761110,
     "title": "Coke One North America"
+  },
+  "INTIGRITI:challengebrp": {
+    "updated": 1793188270,
+    "title": "BRP Challenge"
   }
 }
