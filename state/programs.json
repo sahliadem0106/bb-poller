@@ -344,7 +344,7 @@
     "title": "Grafana Labs - Vulnerability Disclosure Program (VDP)"
   },
   "INTIGRITI:water-link": {
-    "updated": 1793261370,
+    "updated": 1793301216,
     "title": "Water-Link"
   },
   "INTIGRITI:altera": {
@@ -520,7 +520,7 @@
     "title": "Torfs"
   },
   "INTIGRITI:nvidiapublicbugbounty": {
-    "updated": 1793259344,
+    "updated": 1793293266,
     "title": "NVIDIA Public Bug Bounty"
   },
   "INTIGRITI:humo": {
@@ -656,11 +656,11 @@
     "title": "Qualified Responsible Disclosure Program"
   },
   "INTIGRITI:pdqcomprivate": {
-    "updated": 1793041656,
+    "updated": 1793295564,
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
-    "updated": 1793255155,
+    "updated": 1793290550,
     "title": "Here Technologies"
   },
   "INTIGRITI:qcvdp": {
@@ -684,7 +684,7 @@
     "title": "HRS Group VDP"
   },
   "INTIGRITI:wpenginebugbounty": {
-    "updated": 1792145860,
+    "updated": 1793297390,
     "title": "WP Engine Bug Bounty"
   },
   "INTIGRITI:simscale": {
