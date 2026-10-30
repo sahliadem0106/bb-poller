@@ -272,7 +272,7 @@
     "title": "Intertoys"
   },
   "INTIGRITI:doccle": {
-    "updated": 1792754831,
+    "updated": 1793352907,
     "title": "Doccle Bug Bounty program"
   },
   "INTIGRITI:farfetchbugbounty": {
@@ -296,7 +296,7 @@
     "title": "Liveperson Conversational Cloud"
   },
   "INTIGRITI:belfius": {
-    "updated": 1778145373,
+    "updated": 1793368694,
     "title": "Belfius"
   },
   "INTIGRITI:myworkandme": {
@@ -344,7 +344,7 @@
     "title": "Grafana Labs - Vulnerability Disclosure Program (VDP)"
   },
   "INTIGRITI:water-link": {
-    "updated": 1793301216,
+    "updated": 1793374228,
     "title": "Water-Link"
   },
   "INTIGRITI:altera": {
@@ -656,11 +656,11 @@
     "title": "Qualified Responsible Disclosure Program"
   },
   "INTIGRITI:pdqcomprivate": {
-    "updated": 1793326702,
+    "updated": 1793360646,
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
-    "updated": 1793290550,
+    "updated": 1793371086,
     "title": "Here Technologies"
   },
   "INTIGRITI:qcvdp": {
@@ -1026,5 +1026,9 @@
   "INTIGRITI:challengebrp": {
     "updated": 1793188270,
     "title": "BRP Challenge"
+  },
+  "INTIGRITI:adacbugbountyprogram": {
+    "updated": 1793367306,
+    "title": "ADAC Bug Bounty Program"
   }
 }
