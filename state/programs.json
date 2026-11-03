@@ -32,7 +32,7 @@
     "title": "Cryptobox"
   },
   "YWH:infomaniak-bug-bounty-program": {
-    "updated": "2026-11-02T14:04:11+01:00",
+    "updated": "2026-11-03T13:14:59+01:00",
     "title": "Infomaniak Bug Bounty program"
   },
   "YWH:contentsquare-bug-bounty-program": {
@@ -80,7 +80,7 @@
     "title": "Private Internet Access - Bug Bounty Program"
   },
   "YWH:expressvpn-bug-bounty-program": {
-    "updated": "2026-08-31T04:31:32+02:00",
+    "updated": "2026-11-03T11:04:42+01:00",
     "title": "ExpressVPN - Bug Bounty Program"
   },
   "YWH:cyberghost-bug-bounty-program": {
@@ -140,7 +140,7 @@
     "title": "MediaMarktSaturn Bug Bounty Program"
   },
   "YWH:zecible-public-bug-bounty-program": {
-    "updated": "2026-10-06T16:42:52+02:00",
+    "updated": "2026-11-03T10:31:15+01:00",
     "title": "ZECIBLE PUBLIC BUG BOUNTY PROGRAM"
   },
   "YWH:komoju-public-bug-bounty-program": {
@@ -164,7 +164,7 @@
     "title": "Moneybox Bug Bounty"
   },
   "YWH:harman-international-web-applications": {
-    "updated": "2026-10-19T15:01:02+02:00",
+    "updated": "2026-11-03T14:40:26+01:00",
     "title": "HARMAN International - Web Applications"
   },
   "YWH:mon-espace-sante-mes": {
@@ -308,7 +308,7 @@
     "title": "DigitalOcean"
   },
   "INTIGRITI:superdrug": {
-    "updated": 1793265664,
+    "updated": 1793697801,
     "title": "Superdrug"
   },
   "INTIGRITI:coca-cola": {
@@ -316,11 +316,11 @@
     "title": "The Coca-Cola Company Vulnerability Disclosure Program"
   },
   "INTIGRITI:marionnaud": {
-    "updated": 1783413456,
+    "updated": 1793697790,
     "title": "Marionnaud"
   },
   "INTIGRITI:kiwavdp": {
-    "updated": 1776935814,
+    "updated": 1793708886,
     "title": "Kiwa Vulnerability Disclosure Program"
   },
   "INTIGRITI:capitalcom": {
@@ -344,7 +344,7 @@
     "title": "Grafana Labs - Vulnerability Disclosure Program (VDP)"
   },
   "INTIGRITI:water-link": {
-    "updated": 1793374638,
+    "updated": 1793717753,
     "title": "Water-Link"
   },
   "INTIGRITI:altera": {
@@ -352,7 +352,7 @@
     "title": "Altera"
   },
   "INTIGRITI:kruidvat": {
-    "updated": 1783415309,
+    "updated": 1793697779,
     "title": "Kruidvat"
   },
   "INTIGRITI:usz-vdp": {
@@ -368,11 +368,11 @@
     "title": "University of Basel VDP"
   },
   "INTIGRITI:iciparisxl": {
-    "updated": 1783414914,
+    "updated": 1793697768,
     "title": "ICI PARIS XL"
   },
   "INTIGRITI:upholdcom": {
-    "updated": 1793632206,
+    "updated": 1793706858,
     "title": "Uphold"
   },
   "INTIGRITI:intergamma": {
@@ -384,11 +384,11 @@
     "title": "Rivian Bug Bounty"
   },
   "INTIGRITI:watsons": {
-    "updated": 1789110008,
+    "updated": 1793697842,
     "title": "Watsons"
   },
   "INTIGRITI:theperfumeshop": {
-    "updated": 1789554273,
+    "updated": 1793697818,
     "title": "The Perfume Shop"
   },
   "INTIGRITI:freepikcompany": {
@@ -408,7 +408,7 @@
     "title": "De Volkskrant"
   },
   "INTIGRITI:lansweeper1": {
-    "updated": 1788271172,
+    "updated": 1793705690,
     "title": "Lansweeper Bug Bounty Program"
   },
   "INTIGRITI:crossborderfines": {
@@ -512,7 +512,7 @@
     "title": "OURA Vulnerability Disclosure Program"
   },
   "INTIGRITI:dropbox": {
-    "updated": 1791598843,
+    "updated": 1793709215,
     "title": "Dropbox Bug Bounty"
   },
   "INTIGRITI:torfs": {
@@ -644,7 +644,7 @@
     "title": "Dropbox Vulnerability Disclosure Program "
   },
   "INTIGRITI:arm": {
-    "updated": 1792754875,
+    "updated": 1793700958,
     "title": "Arm"
   },
   "INTIGRITI:fing": {
@@ -808,7 +808,7 @@
     "title": "Orbia Responsible Disclosure"
   },
   "INTIGRITI:signicatresponsibledisclosure": {
-    "updated": 1761822291,
+    "updated": 1793709255,
     "title": "Signicat Responsible Disclosure"
   },
   "INTIGRITI:responsiblevulnerabilitydisclosureprogram": {
@@ -904,7 +904,7 @@
     "title": "MyDirtyHobby Bug Bounty Program"
   },
   "INTIGRITI:telenetgroup": {
-    "updated": 1791981486,
+    "updated": 1793704018,
     "title": "Telenet - Base - Wyre - Tadaam"
   },
   "INTIGRITI:probiller-bbp": {
@@ -956,11 +956,11 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1793121214,
+    "updated": 1793713809,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
-    "updated": 1793237342,
+    "updated": 1793712102,
     "title": "DataCamp"
   },
   "INTIGRITI:VDP": {
@@ -984,7 +984,7 @@
     "title": "Coveo Public Bug Bounty"
   },
   "INTIGRITI:upcloud": {
-    "updated": 1789561898,
+    "updated": 1793717483,
     "title": "UpCloud Bug Bounty"
   },
   "INTIGRITI:autolivvdp": {
@@ -1024,7 +1024,7 @@
     "title": "Coke One North America"
   },
   "INTIGRITI:challengebrp": {
-    "updated": 1793690360,
+    "updated": 1793693100,
     "title": "BRP Challenge"
   },
   "INTIGRITI:adacbugbountyprogram": {
