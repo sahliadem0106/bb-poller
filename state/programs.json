@@ -660,7 +660,7 @@
     "title": "PDQ bug bounty program"
   },
   "INTIGRITI:heretechnologies": {
-    "updated": 1793855288,
+    "updated": 1793904764,
     "title": "Here Technologies"
   },
   "INTIGRITI:qcvdp": {
@@ -684,7 +684,7 @@
     "title": "HRS Group VDP"
   },
   "INTIGRITI:wpenginebugbounty": {
-    "updated": 1793297390,
+    "updated": 1793901422,
     "title": "WP Engine Bug Bounty"
   },
   "INTIGRITI:simscale": {
@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1793713809,
+    "updated": 1793902452,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -1016,7 +1016,7 @@
     "title": "Fluvius"
   },
   "INTIGRITI:lightsparkpublicbugbounty": {
-    "updated": 1793886897,
+    "updated": 1793910337,
     "title": "Lightspark Public Bug Bounty"
   },
   "INTIGRITI:cokeonenorthamerica": {
@@ -1030,5 +1030,9 @@
   "INTIGRITI:adacbugbountyprogram": {
     "updated": 1793682677,
     "title": "ADAC Bug Bounty Program"
+  },
+  "INTIGRITI:rivianvdp": {
+    "updated": 1793910096,
+    "title": "Rivian Vulnerability Disclosure Program"
   }
 }
