@@ -88,7 +88,7 @@
     "title": "CyberGhost - Bug Bounty Program"
   },
   "YWH:dojo": {
-    "updated": "2026-10-02T15:51:51+02:00",
+    "updated": "2026-11-06T10:39:28+01:00",
     "title": "YesWeHack Dojo"
   },
   "YWH:bug-bounty-program-blablacar": {
@@ -164,7 +164,7 @@
     "title": "Moneybox Bug Bounty"
   },
   "YWH:harman-international-web-applications": {
-    "updated": "2026-11-03T14:40:26+01:00",
+    "updated": "2026-11-06T11:48:05+01:00",
     "title": "HARMAN International - Web Applications"
   },
   "YWH:mon-espace-sante-mes": {
@@ -320,7 +320,7 @@
     "title": "Marionnaud"
   },
   "INTIGRITI:kiwavdp": {
-    "updated": 1793708886,
+    "updated": 1793958352,
     "title": "Kiwa Vulnerability Disclosure Program"
   },
   "INTIGRITI:capitalcom": {
@@ -532,7 +532,7 @@
     "title": "Allegro"
   },
   "INTIGRITI:attentiavdp": {
-    "updated": 1793611954,
+    "updated": 1793962790,
     "title": "Attentia VDP"
   },
   "INTIGRITI:wartsila-vdp": {
@@ -956,7 +956,7 @@
     "title": "Liferay DXP"
   },
   "INTIGRITI:truelayer": {
-    "updated": 1793902452,
+    "updated": 1793973507,
     "title": "TrueLayer"
   },
   "INTIGRITI:datacamp": {
@@ -1028,7 +1028,7 @@
     "title": "BRP Challenge"
   },
   "INTIGRITI:adacbugbountyprogram": {
-    "updated": 1793682677,
+    "updated": 1793960735,
     "title": "ADAC Bug Bounty Program"
   },
   "INTIGRITI:rivianvdp": {
